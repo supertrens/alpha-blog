@@ -10,13 +10,7 @@
   </head>
 
   <body>
-   <ul>
-    <li><a href="/articles">See all articles</a></li>
-    <li><a href="/articles/new">New article</a></li>
-   </ul>
-    <% flash.each do |name, msg| %>
-      <%= msg %>
-    <% end %>  
+    <%= render 'layouts/messages'%>
     <%= yield %>
   </body>
 </html>
